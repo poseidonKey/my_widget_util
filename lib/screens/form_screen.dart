@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_util_widget/const/colors.dart';
+import 'package:my_util_widget/widgets/custom_elevated_button.dart';
 import 'package:my_util_widget/widgets/custom_text_field.dart';
 
 class FormScreen extends StatefulWidget {
@@ -94,6 +95,17 @@ class _FormScreenState extends State<FormScreen> {
                       child: const Text('저장'),
                     ),
                   ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                      width: double.infinity,
+                      child: CustomElevatedButton(
+                        label: 'Back!!',
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      )),
                 ],
               ),
             ),

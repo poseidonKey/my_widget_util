@@ -48,7 +48,10 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  void openScreen({required BuildContext context, required Widget screen}) {
+  void openScreen({
+    required BuildContext context,
+    required Widget screen,
+  }) {
     Navigator.of(context).push(MaterialPageRoute(builder: (context) {
       return screen;
     }));
